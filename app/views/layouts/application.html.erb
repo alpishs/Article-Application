@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comments</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <%= render 'layouts/header' %>
+    <div class="container" style="border:1px solid #cecece;">
+
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
+</body>
+</html>
+<style type="text/css">
+   body {
+    padding-bottom: 70px !important;
+    background-color: darkkhaki;
+  }
+</style>

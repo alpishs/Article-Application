@@ -1,0 +1,16 @@
+<h4> Article Title: <%= @article.title %></h1><br/>
+<%= @article.body %> <br>
+<small>Submitted <%= time_ago_in_words(@article.created_at) %> ago</small>
+<hr>
+
+<%= link_to 'Back', articles_path, class: 'btn btn-primary' %>
+<h3>Comments</h3>
+
+  <%= form_for [@article, Comment.new] do |f| %>
+  <%= f.text_area :body, placeholder: "Add a comment" , :class => 'form-control'%><br/>
+  <%= f.submit "Add Comment", :class => 'btn btn-primary' %>
+<% end %>
+
+<ul>
+  <%= render @article.comments %>
+</ul>

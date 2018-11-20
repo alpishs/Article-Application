@@ -1,0 +1,23 @@
+Interactive-Article-Application
+
+Create your own artices.
+
+Comment on articles.
+
+Reply on comments of articles.
+
+DETAILS:
+
+    System dependencies: No
+
+    clone project
+
+    bundle install
+
+    rake db:create
+
+    rake db:migrate
+
+    rails s
+
+    Please hit url: http://localhost:3000/

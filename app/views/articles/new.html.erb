@@ -1,0 +1,10 @@
+<%= form_for @article do |f|%>
+<h4> Create New Article <h4>
+<%= f.label :title%>
+<%= f.text_field :title , :class => 'form-control'%>
+
+<%= f.label :body%>
+<%= f.text_area :body , :class => 'form-control'%><br>
+
+<%= f.submit 'Create Article', :class => 'btn btn-primary' %>
+<%end%>
